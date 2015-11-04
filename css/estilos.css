@@ -1,0 +1,29 @@
+
+
+#splash img{width:640px;
+	height:280px;
+	margin:0 auto;
+border-radius: 12px;
+border:solid 10px #fff}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.jumbotron{
+	background: #428bca;
+	padding: 20px 0;
+	opacity: .9;
+
+
+}
+
+.jumbotron1{
+	background: #428bca;
+	opacity: .9;
+	padding: 20px 0;
+
+
+}
+
+
