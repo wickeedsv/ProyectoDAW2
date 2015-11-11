@@ -1,11 +1,18 @@
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+ <meta charset="utf-8"/>
+ <title>Mi pais El salvador</title>
  <meta charset="UTF-8">
  <title>Mi Pais El Salvador</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/estilos.css">
+
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="css/esti.css">
+
 </head>
 <body>
 
@@ -21,47 +28,57 @@
 					</button>
 					<a href="index.html" class="navbar-brand">El Salvador</a>
 				</div>
+
 				<!-- Inicia Menu -->
 				<div class="collapse navbar-collapse" id="navegacion-fm">
 					<ul class="nav navbar-nav">
+
 						<li class="active"><a href="index.html">Inicio</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
 								Zona Occidental <span class="caret"></span>
 							</a>
-							<ul class="dropdown-menu" role="menu">
+							<ul class="dropdown-menu" role="menu" id="Listaoccidente">
 								<li>Departamentos</li>
 								<li class="divider"></li>
-								  <li><a href='Departamentos/Santa Ana/SantaAna.html'><span>Santa Ana</span></a></li>
-						          <li><a href='Departamentos/Ahuachapan/Ahuachapan.html'><span>Ahuachapán</span></a></li>
-						          <li><a href='Departamentos/Sonsonate/Sonsonate.html'><span>Sonsonate</span></a></li>
+
+
+								<!--SE MUESTRA CON DOM -->
+
+
+
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
 								Zona Central<span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
+
+								<ul class="dropdown-menu" role="menu" id="ListaCentral">
+
 								<li>Departamentos</li>
+
+
 								<li class="divider"></li>
-								  <li><a href='Departamentos/Chalatenango/Chalatenango.html'><span>Chalatenango</span></a></li>
-					              <li><a href='Departamentos/La libertad/LaLibertad.html'><span>La libertad</span></a></li>
-					              <li><a href='Departamentos/San Salvador/San Salvador.html'><span>San Salvador</span></a></li>
-					              <li><a href='Departamentos/Cuscatlan/Cuscatlan.html'><span>Cuscatlán</span></a></li>
-					              <li><a href='Departamentos/La Paz/La Paz.html'><span>La Paz</span></a></li>
-					              <li><a href='Departamentos/Cabanas/Cabanas.html'><span>Cabañas</span></a></li>
-					              <li><a href='Departamentos/San Vicente/San Vicente.html'><span>San Vicente</span></a></li>
+
+							<!--	SE MUESTRA CON DOM -->
+
 							</ul>
 						</li>
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
 								zona Oriental<span class="caret"></span></a>
-								<ul class="dropdown-menu" role="menu">
+								<ul class="dropdown-menu" role="menu" id="Listaoriente">
 								<li>Departamentos</li>
 								<li class="divider"></li>
+
+
+								<!--SE MUESTRA CON DOM
 								<li><a href='Departamentos/Usulutan/Usulutan.html'><span>Usulatán</span></a></li>
 				                 <li><a href='Departamentos/San Miguel/SanMiguel.html'><span>San Miguel</span></a></li>
 				                 <li><a href='Departamentos/Morazan/Morazan.html'><span>Morazán</span></a></li>
-				                 <li><a href='Departamentos/La Union/La Union.html'><span>La Unión</span></a></li>
+				                 <li><a href='Departamentos/La Union/La Union.html'><span>La Unión</span></a></li>-->
+
+
 							</ul>
 							</li>
 					</ul>
@@ -78,8 +95,13 @@
 
 			<div id="splash">
 
+
+				<!--SE MUESTRA CON DOM-->
+
+
 		<center><div id="slider">
-		    <img src="img/img4.jpg" width="540" height="180"  />
+      <nav class="comentariosnav"> | <a href="Comentarios/admin.html">Ver Todos los Comentarios</a> |</nav>
+		  <img src="img/img4.jpg" width="540" height="180"  />
 			<img src="img/img1.jpg" width="540" height="180"   class="ocultar"/>
 			<img src="img/img2.jpg" width="540" height="180"  class="ocultar"/>
 			<img src="img/img3.jpg" width="540" height="180"   class="ocultar"/>
@@ -94,10 +116,193 @@
 		<section class="posts col-md-9">
 <article class="post clearfix">
 
-						<img class="img-thumbnail" src="img/ElSalvador.jpg" alt="">
-					</a>
+
+<!--MAPEO COMPLETO POR DEPARTAMENTOS-->
+
+<img width="900px" height="600px" id="mapaz" src="img/12200514_535800629928353_702109662_n.jpg" usemap="#mapa">
+<map name="mapa" >
+
+
+	 	<div id="dialog1" title="Ahuachapan" style="display:none;">
+   		 <img width="150px" margin-left="20px" src="img/ahuchapan.png">
+   		 <br>
+   		 <br>
+   		 <li>Cabecera Departamental: <small>Ahuachapan</small></li>
+   		 <p>Altitud: </p><small>
+				<small><li>Media - 800msnm</li></small>
+				<small><li>Maxima - 1000msnm</li></small>
+			<small><li>Minima - 700msnm</li></small>
+		</div>
+
+			<div id="dialog2" title="Santa Ana" style="display:none;">
+   		 <img width="150px" margin-left="20px" src="img/santa_ana.png">
+   		 <br>
+   		 <br>
+   		 <li>Cabecera Departamental: <small>Santa Ana</small></li>
+   		 <p>Altitud: </p><small>
+				<small><li>Media - 665msnm</li></small>
+		</div>
+
+    <div id="dialog3" title="Sonsonate" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/sonsonate.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental: <small>Sonsonate</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media -  220 msnm</li></small>
+    </div>
+
+    <div id="dialog4" title="La libertad" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/la_libertad.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental: <small>Santa Tecla</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media -  520 msnm</li></small>
+    </div>
+
+        <div id="dialog5" title="San Salvador" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/sansalvador.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>San Salvador</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 670msnm</li></small>
+        <small><li>Maxima - 1000msnm</li></small>
+      <small><li>Minima - 590msnm</li></small>
+    </div>
+
+        <div id="dialog6" title="Chalatenango" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/chalate.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>Chalatenango</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 670msnm</li></small>
+        <small><li>Maxima - 1000msnm</li></small>
+      <small><li>Minima - 590msnm</li></small>
+    </div>
+
+    <div id="dialog7" title="Cuscatlan" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/cusca.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>Cojutepeque</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 1000msnm</li></small>
+        <small><li>Maxima - 1200msnm</li></small>
+      <small><li>Minima - 790msnm</li></small>
+    </div>
+
+    <div id="dialog8" title="La Paz" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/lapaz.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>Zacatecoluca</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 200msnm</li></small>
+        <small><li>Maxima - 700msnm</li></small>
+      <small><li>Minima - 125msnm</li></small>
+    </div>
+
+    <div id="dialog9" title="Caba&ntilde;as" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/caba.jpg">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>Ilobasco</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 750 msnm</li></small>
+
+    </div>
+
+    <div id="dialog10" title="San Vicente" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/sanvi.jpg">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>San Vicente</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media -    390msnm</li></small>
+
+    </div>
+
+    <div id="dialog11" title="Usulutan" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/usulutan.png">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>Usulutan</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 670msnm</li></small>
+        <small><li>Maxima - 1000msnm</li></small>
+      <small><li>Minima - 590msnm</li></small>
+    </div>
+
+    <div id="dialog12" title="San Miguel" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/sanmi.jpg">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>San Miguel</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 200msnm</li></small>
+        <small><li>Maxima - 400msnm</li></small>
+      <small><li>Minima - 100msnm</li></small>
+    </div>
+
+    <div id="dialog13" title="Morazan" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/mora.jpg">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>San Francisco Gotera</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 870msnm</li></small>
+
+    </div>
+
+    <div id="dialog14" title="La Union" color="blue" style="display:none;">
+       <img width="150px" margin-left="20px" src="img/launi.jpg">
+       <br>
+       <br>
+       <li>Cabecera Departamental:    <small>La Union</small></li>
+       <p>Altitud: </p><small>
+        <small><li>Media - 1570msnm</li></small>
+
+    </div>
+
+<area  onclick="abrir_dialog1()" id="ahuachapan" shape="poly"  coords="108,182,97,185,85,190,78,200,70,206,59,219,48,225,46,232,40,231,36,243,35,251,23,257,16,265,11,277,13,284,8,289,9,297,14,300,17,308,9,314,38,328,64,340,79,324,85,332,93,334,95,338,107,335,108,320,113,312,118,309,117,300,116,287,118,276,122,265,116,255,120,251,130,249,140,249,140,235,144,226,145,215,145,206,138,202,135,195,122,194,"/>
+
+<area onclick="abrir_dialog2()" id="santa_ana"  shape="poly" coords="194,45,203,61,193,67,193,82,206,81,217,109,215,118,205,117,164,135,137,187,156,208,146,243,157,249,190,284,202,278,235,299,241,258,236,247,261,227,264,196,250,194,248,182,258,168,255,156,285,135,287,109,303,105,311,77,296,65,288,49,269,32,257,28,254,35,246,38,239,34,222,39,217,51,210,52,211,39"/>
+
+
+<area onclick="abrir_dialog3()" id="sonsonate"  shape="poly" coords="139,261,131,261,128,267,133,275,129,280,128,289,125,295,125,302,123,308,126,315,124,324,116,329,115,338,114,349,111,353,103,355,92,344,87,339,84,344,76,352,65,353,72,358,86,371,95,379,107,392,108,404,111,416,117,423,127,423,140,424,152,422,162,425,170,430,175,421,179,414,185,405,189,398,189,389,194,380,199,375,199,369,203,365,199,361,204,353,209,347,213,343,212,338,218,331,224,332,226,324,222,321,221,316,214,312,206,306,199,301,193,294,183,297,183,303,174,292,170,284,164,276,164,270,156,264,"/>
+
+<area onclick="abrir_dialog4()" id="la_libertad"  shape="poly" coords="267,227,265,235,270,241,259,251,253,252,247,263,250,275,249,281,251,291,248,299,243,305,243,315,251,320,247,329,240,331,238,340,233,340,222,357,226,361,224,369,215,380,214,392,194,421,211,426,227,432,238,430,267,429,285,436,297,435,342,460,347,454,342,446,350,444,344,437,334,435,329,438,323,424,319,416,322,402,320,395,319,383,324,378,317,375,316,366,322,365,320,355,314,354,307,345,306,338,303,330,308,324,308,308,308,301,313,287,317,275,317,257,325,258,325,252,311,254,310,239,303,217,309,206,298,204,295,198,287,200,281,201,276,206,277,212,271,212," />
+
+<area onclick="abrir_dialog6()" id="chalatenango"  shape="poly" coords="297,34,307,42,316,50,318,62,328,68,334,75,333,87,329,95,327,104,309,111,315,120,314,127,308,139,297,144,282,157,285,169,277,180,276,194,295,193,296,187,312,180,318,184,318,190,327,188,334,187,344,192,352,186,359,191,369,184,382,187,396,188,404,196,409,208,410,220,419,233,433,233,443,231,451,235,458,235,460,227,472,229,475,223,485,222,493,214,500,210,509,212,519,208,519,195,506,192,501,185,506,174,505,164,490,169,484,162,473,167,466,157,464,144,461,135,449,133,433,124,430,128,423,118,420,110,411,102,409,96,409,88,403,73,388,71,389,55,387,48,379,46,375,53,368,64,355,60,348,58,346,50,338,47,335,51,324,43,307,37" />
+
+<area onclick="abrir_dialog5()" id="san_salvador"  shape="poly"  coords="315,210,320,234,323,237,318,242,334,248,336,254,329,256,326,282,321,298,320,321,315,328,319,334,315,342,325,350,331,351,333,352,327,363,328,373,334,373,331,379,328,390,334,394,330,409,337,428,353,430,354,424,361,409,359,398,352,382,369,382,377,371,375,348,380,344,396,343,382,305,378,308,368,295,370,287,364,285,360,289,354,277,368,268,352,244,350,233,354,212,363,197,350,203,346,199,336,205,322,201" />
+
+
+<area onclick="abrir_dialog7()" id="cuscatlan" shape="poly"  coords="373,198,368,210,370,220,364,236,364,245,379,267,367,276,372,283,380,293,387,304,391,302,404,342,413,357,417,355,422,364,428,365,431,357,440,353,447,349,451,345,448,341,453,317,434,304,431,301,437,297,436,293,415,278,414,262,429,245,415,245,406,234,403,213,396,204,384,199" />
+
+<area onclick="abrir_dialog8()" id="la_paz" shape="poly"  coords="358,466,404,494,449,518,458,525,465,529,471,513,478,506,473,496,481,493,482,475,470,454,470,473,476,425,465,398,450,393,446,365,434,368,432,378,417,370,401,351,387,352,383,357,386,376,378,387,361,390,368,406,365,425,362,437,366,445,359,451,365,458" />
+
+<area onclick="abrir_dialog9()" id="cabañas" shape="poly"  coords="453,239,441,241,429,257,429,271,449,287,453,293,448,297,471,312,506,297,536,300,555,312,558,320,576,322,575,311,582,305,585,292,590,266,583,253,589,236,578,224,566,227,558,216,547,209,534,210,518,218,480,235,460,245" />
+
+<area onclick="abrir_dialog10()" id="san_vicente" shape="poly" coords="469,323,465,337,465,351,454,359,458,367,457,386,474,393,486,419,480,432,481,450,493,468,491,487,490,500,482,507,473,538,487,533,484,525,492,517,500,514,510,497,506,481,526,445,530,413,538,406,539,398,559,390,573,364,586,356,573,333,554,330,553,322,537,314,504,308" />
+
+<area onclick="abrir_dialog11()" id="usulutan" shape="poly"  coords="595,365,582,375,575,383,567,399,551,406,546,417,538,421,535,457,527,469,515,495,520,507,506,523,491,534,493,543,532,557,563,562,599,576,592,566,570,559,576,554,562,539,543,548,524,542,520,537,542,537,548,533,547,527,576,536,581,547,583,556,601,560,592,540,597,538,614,560,609,575,631,575,624,571,634,567,631,560,640,559,646,566,638,576,682,581,692,576,713,578,693,552,679,550,683,537,678,529,678,520,665,520,659,525,662,541,651,543,648,529,657,516,657,509,639,509,639,500,629,493,629,468,623,470,631,446,630,423,628,405,633,396,631,372,626,377,613,372,612,362" />
+
+
+<area onclick="abrir_dialog12()" id="san_miguel" shape="poly"  coords="604,264,603,281,597,292,591,312,597,322,601,330,619,331,635,347,643,342,644,370,639,387,645,414,640,418,639,438,644,440,640,461,652,471,669,477,667,489,673,493,677,487,688,492,696,506,692,518,706,520,724,574,735,543,735,532,750,515,750,485,756,480,749,470,756,452,749,423,756,413,754,385,725,386,720,380,723,369,700,365,679,341,676,320,686,318,691,307,681,296,676,278,685,271,679,243,664,245,644,255,655,253,651,261,643,255,625,255,624,266,614,266" />
+
+<area onclick="abrir_dialog13()" id="morazan" shape="poly"  coords="710,236,697,238,693,246,699,274,689,282,696,296,708,307,704,318,693,319,692,336,714,359,733,360,734,373,741,377,772,377,788,362,796,317,783,314,801,287,796,275,802,266,795,255,776,266,774,254,756,238,755,220,742,218,726,224,703,217" />
+
+<area onclick="abrir_dialog14()" id="la_union" shape="poly"  coords="805,246,811,259,807,267,812,281,797,307,807,310,805,338,796,359,779,381,773,420,782,445,775,463,774,511,757,537,820,547,808,530,845,513,856,488,831,467,834,440,857,443,875,429,878,415,854,398,861,373,868,363,869,330,877,312,882,284,861,252,853,240,828,243" />
+
+</map>
+
+
 					<h2 class="post-title">
-						<a href="#">Mapa interactivo, El Salvador Imprecionante</a>
+						<a href="#">Mapa interactivo, El Salvador Impresionante</a>
 					</h2>
 					<p><span class="post-fecha">03 de Noviembre de 2015</span>
 
@@ -105,28 +310,50 @@
 			</section>
 			<aside class="col-md-3 hidden-xs hidden-sm">
 				<h4 class="list-group-item active">Dejanos tu comentario</h4>
-				<div class="list-group">
-					<form id="myformulario">
-						<p >Nombre: <br><input type="text" id="nombre"></p>
-			            <p >comentario: <br><textarea id="comentario"></textarea></p>
-			            <p><input type="button" id="guardar" value="guardar"></P>
-			            </form>
-			        </div>
-
-				<h4 class="list-group-item active">Cometarios recientes</h4>
-				<section id="datos_Alacenados">
-
-
-
-				</section>
+					<div id="main">
+    <div id="content">
+      <h3>Dejanos tus Comentarios</h3>
+      <form name="return_form" id="return_form" method="post" action="Comentarios/PaginaGracias.html" accept-charset="utf-8">
+        <fieldset>
+          <div class="formLayout">
+            <div class="formLayout_left">
+            <div class="form-group">
+              <label for="FirstName" >Primer Nombre: <span>*</span></label>
+              <input class="form-control" type="text" name="firstname" id="FirstName" required="required" placeholder="First Name" />
+              </div>
+              <div class="form-group">
+              <label for="Surname">Segundo Nombre: <span>*</span></label>
+              <input class="form-control" type="text" name="lastname" id="Surname" required="required" placeholder="Last Name" />
+              </div>
+              <div class="form-group">
+              <label for="email">E-Mail: <span>*</span></label>
+              <input class="form-control" type="email" name="email" id="text" required="required" placeholder="me@example.com" />
+              </div>
+              <div class="form-group">
+              <label for="email">Comentario: <span>*</span></label>
+              <textarea id="Telephone" type="text" name="phone" class="form-control" placeholder="Comentario.." required="required"></textarea>
+              </br>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+          <div class="formLayout" id="submit_form">
+            <p class="submit_from"><strong>
+            <button type="submit" id="submit_return_form_button" class="button">Comentar</button>
+            <br />
+          </div>
+          </fieldset>
 			</aside>
-		</div>
 	</section>
+				      </form>
+   				 </div>
+			</div>
+		</div>
 <section class="jumbotron1">
 		<div class="container">
 <footer>
  <section>
-          <article>
+        <article>
             <hgroup><h3>Acerca de ...</h3></hgroup>
             <p>Mapa interactivo de EL Salvador</p>
 
@@ -134,19 +361,142 @@
             <ul>
               <LI>Oscar Antonio Villalata</LI>
               <LI>Mauricio Rosales Jovel</LI>
-              <li>Yancy Godoy</li>
+              <li>Yancy Melany Godoy</li>
               <li>Reynaldo Mendoza Crespin</li>
 
             </ul>
           </article>
-        </section>
+        </section></center>
 </footer>
 </div>
 </section>
-
+<script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
+    <script src="js/form.js" type="text/javascript" ></script>
 <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-slider.js"></script>
 	 <script type="text/javascript" src="js/localstorage.js"></script>
+	 <script type="text/javascript" src="js/DOM.js"></script>
+	 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="/resources/demos/external/jquery.bgiframe-2.1.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+
+    	function abrir_dialog1() {
+      $( "#dialog1" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    	function abrir_dialog2() {
+      $( "#dialog2" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog3() {
+      $( "#dialog3" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+     function abrir_dialog4() {
+      $( "#dialog4" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+     function abrir_dialog5() {
+      $( "#dialog5" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+     function abrir_dialog6() {
+      $( "#dialog6" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog7() {
+      $( "#dialog7" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog8() {
+      $( "#dialog8" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog9() {
+      $( "#dialog9" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog10() {
+      $( "#dialog10" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog11() {
+      $( "#dialog11" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog12() {
+      $( "#dialog12" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+    function abrir_dialog13() {
+      $( "#dialog13" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+    function abrir_dialog14() {
+      $( "#dialog14" ).dialog({
+          show: "blind",
+          hide: "explode"
+
+      });
+    };
+
+
+
+
+    </script>
   </body>
   </html>

@@ -24,17 +24,20 @@ function leer(nombre){
 	
 	//var valores=sessionStorage[nombre];
 
-	datosAl.innerHTML='<div><button onclick="eliminar()">Eliminar todo</button></div>';
+	datosAl.innerHTML='<br><div><button class="btn btn-success" onclick="eliminar()">Eliminar todo</button></div><br>';
 
 	
 	for(i=0;i<localStorage.length;i++){
 		var nombre=localStorage.key(i);
 		var comentario=localStorage.getItem(nombre)
 
-		datosAl.innerHTML +="<div>" + nombre + "--" + comentario + "</div>";
+		datosAl.innerHTML +="<div class='list-group-item'>" + nombre + "--" + comentario + "</div>";
 
 	}
 }
+
+
+
 
 function eliminar(){
 	if(confirm("Se borran todos los datos guardados")){
